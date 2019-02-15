@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
 	int n = 1;
-	TArrList<int> = new TArrList();
+	TArrList<int> A();
 	while (n) 
 	{
-		ñout << "1. Create new List\n 2. Put element\n 3. Get element\n 4. Print List\n 0. Exit\n";
+		cout << "1. Create new List\n 2. Put element\n 3. Get element\n 4. Print List\n 0. Exit\n";
 		cin >> n;
 		switch (n)
 		{
