@@ -17,7 +17,7 @@ int main()
 				int s;
 				cin >> s;
 				~A;
-				A = new TQueue(s);
+				A = new TQueue<int>(s);
 				break;
 
 			case 2:
