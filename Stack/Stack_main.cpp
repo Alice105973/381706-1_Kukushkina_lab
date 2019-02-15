@@ -17,7 +17,7 @@ int main()
 				int s;
 				cin >> s;
 				~A;
-				A = new TStack<int>(s);
+				TStack<int> A = new TStack(s);
 				break;
 
 			case 2:
