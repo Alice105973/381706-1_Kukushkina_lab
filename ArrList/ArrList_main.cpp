@@ -5,27 +5,22 @@ using namespace std;
 int main()
 {
 	int n = 1;
-	TArrList<int> A();
+	cout << "size: ";
+	int s;
+	cin >> s;
+	TArrList<int> A(s);
 	while (n) 
 	{
-		cout << "1. Create new List\n 2. Put element\n 3. Get element\n 4. Print List\n 0. Exit\n";
+		cout << "1. Put element\n 2. Get element\n 3. Print List\n 0. Exit\n";
 		cin >> n;
+		int e;
 		switch (n)
 		{
 			case 1:
-				cout << "size: ";
-				int s;
-				cin >> s;
-				~A;
-				A = new TArrList(s);
-				break;
-
-			case 2:
 				cout << "PUT:\n 1. Start\n 2. End\n 3. Another position\n 0. Exit\n";
 				cin >> n;
 				switch (n) {
 				case 1:
-					int e;
 					cout << "Element: ";
 					cin >> e;
 					A.PutEnd(e);
@@ -52,10 +47,10 @@ int main()
 				}
 				break;
 
-				case 3:
-				cout << "GET:\n 1. Start\n 2. End\n 3. Another position\n 0. Exit\n";
-				cin >> n;
-				switch (n) {
+			case 2:
+			cout << "GET:\n 1. Start\n 2. End\n 3. Another position\n 0. Exit\n";
+			cin >> n;
+			switch (n) {
 				case 1:
 					A.GetEnd();
 					break;
@@ -75,16 +70,16 @@ int main()
 				}
 				break;
 
-			case 4:
-				A.Print();
-				break;
+		case 3:
+			A.Print();
+			break;
 
-			case 0:
-				return 0;
+		case 0:
+			return 0;
 
-			default: 
-				cout << "Wrong command!\n";
-				break;
+		default: 
+			cout << "Wrong command!\n";
+			break;
 		}
 	}
 }
