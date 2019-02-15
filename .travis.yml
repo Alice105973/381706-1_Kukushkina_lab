@@ -8,6 +8,8 @@ before_script:
 script:
   - cmake ../381706-1_Kukushkina_lab
   - make -j
+  - ./VectorTest/VectorTest
+  - ./MatrixTest/MatrixTest
   - ./ArrListTest/ArrListTest
   - ./StackTest/StackTest
   - ./QueueTest/QueueTest
