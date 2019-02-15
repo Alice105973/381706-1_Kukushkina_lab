@@ -26,13 +26,12 @@ int main()
 					A.PutEnd(e);
 					break;
 				case 2:
-					int e;
 					cout << "Element: ";
 					cin >> e;
 					A.PutStart(e);
 					break;
 				case 3:
-					int e, p;
+					int p;
 					cout << "Position: ";
 					cin >> p;
 					cout << "Element: ";
@@ -58,6 +57,7 @@ int main()
 					A.GetStart();
 					break;
 				case 3:
+					int p;
 					cout << "Position: ";
 					cin >> p;
 					A.Get(p);
