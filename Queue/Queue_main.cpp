@@ -9,7 +9,6 @@ int main()
 	int s;
 	cin >> s;
 	TQueue<int> A(s);
-	break;
 	while (n) 
 	{
 		cout << "1. Put element\n 2. Get element\n 3. Print Queue\n 0. Exit\n";
