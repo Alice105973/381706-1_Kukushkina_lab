@@ -8,7 +8,7 @@ int main()
 	TQueue<int> A = new TQueue();
 	while (n) 
 	{
-		ñout << "1. Create new Queue\n 2. Put element\n 3. Get element\n 4. Print Queue\n 0. Exit\n";
+		cout << "1. Create new Queue\n 2. Put element\n 3. Get element\n 4. Print Queue\n 0. Exit\n";
 		cin >> n;
 		switch (n)
 		{
