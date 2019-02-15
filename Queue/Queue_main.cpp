@@ -8,7 +8,7 @@ int main()
 	cout << "size: ";
 	int s;
 	cin >> s;
-	TQueue<int> A = new TQueue<int>(s);
+	TQueue<int> A(s);
 	break;
 	while (n) 
 	{
