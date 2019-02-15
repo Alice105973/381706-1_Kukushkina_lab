@@ -37,3 +37,8 @@
 *.cmake
 CMakeFiles
 *.sln
+CMakeCache*
+.vs
+*.dir
+Win32
+Debug

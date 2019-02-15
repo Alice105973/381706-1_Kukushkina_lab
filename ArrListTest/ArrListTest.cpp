@@ -69,7 +69,7 @@ TEST(ArrList, is_full_true)
 
 TEST(ArrList, is_empty_false)
 {
-  TArrList <int> L(1);
+  TArrList <int> A(1);
   A.PutStart(13);
   ASSERT_FALSE(A.IsEmpty());
 }
@@ -109,12 +109,12 @@ TEST(ArrList, empty_list_get_end)
 TEST(ArrList, output_order)
 {
   TArrList <int> A(3);
-  L.PutStart(1); 
-  L.PutEnd(4);   
-  L.PutStart(3); 
-  ASSERT_EQ(4, L.GetEnd());      
-  ASSERT_EQ(3, L.GetStart());   
-  ASSERT_EQ(1, L.GetEnd());
+  A.PutStart(1); 
+  A.PutEnd(4);   
+  A.PutStart(3); 
+  ASSERT_EQ(4, A.GetEnd());      
+  ASSERT_EQ(3, A.GetStart());   
+  ASSERT_EQ(1, A.GetEnd());
 }
 
 TEST(ArrList, empty_list_get)

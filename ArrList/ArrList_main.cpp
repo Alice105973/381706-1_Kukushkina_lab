@@ -1,5 +1,5 @@
 #include "ArrList.h"
-#include <stdio>
+#include <iostream>
 using namespace std;
 
 int main()

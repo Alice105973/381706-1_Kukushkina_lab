@@ -9,5 +9,7 @@ script:
   - cmake ../381706-1_Kukushkina_lab
   - make -j
   - ./ArrListTest/ArrListTest
+  - ./StackTest/StackTest
+  - ./QueueTest/QueueTest
 notifications:
   email: false
