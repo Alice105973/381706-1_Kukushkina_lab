@@ -8,7 +8,7 @@ int main()
 	cout << "size: ";
 	int s;
 	cin >> s;
-	TStack<int> A = new TStack<int>(s);
+	TStack<int> A (s);
 	while (n) 
 	{
 		cout << "1. Put element\n 2. Get element\n 3. Print Stack\n 0. Exit\n";
