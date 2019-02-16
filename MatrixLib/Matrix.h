@@ -36,7 +36,7 @@ TMatrix<T>::TMatrix(const TMatrix<T> &A) :TVector<TVector<T> >(A)
 {}
 
 template <class T>
-TMatrix<T>::TMatrix(const TVector<TVector<T>> &A) : TVector<TVector<T> >(A)
+TMatrix<T>::TMatrix(const TVector<TVector<T> > &A) : TVector<TVector<T> >(A)
 {}
 
 template <class T>
@@ -46,7 +46,7 @@ TMatrix<T>::~TMatrix()
 template <class T >
 bool TMatrix<T>::operator==(const TMatrix<T> &A) const
 {
-  return TVector<TVector<T>>::operator==(A);
+  return TVector<TVector<T> >::operator==(A);
 }
 
 template <class T>
@@ -75,7 +75,7 @@ template <class T>
 TMatrix<T> TMatrix<T>::operator-(const TMatrix<T> &A)
 {
   if (this->size == A.size)
-    return TVector<TVector<T>>::operator-(A);
+    return TVector<TVector<T> >::operator-(A);
   else
     throw Exc("Different sizes");
 }
