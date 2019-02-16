@@ -198,7 +198,7 @@ TEST(List, get_begin_get_empty_list)
   ASSERT_ANY_THROW(list.GetEnd());
 }
 
-TEST(List, copy_list)
+TEST(List, copy_list_1)
 {
   TList<int> list;
   list.PutEnd(1);
