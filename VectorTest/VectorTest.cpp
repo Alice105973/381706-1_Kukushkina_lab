@@ -67,7 +67,7 @@ TEST(Vector, compare_different_size)
   ASSERT_EQ(A == B, 0);
 }
 
-TEST(Vector, non-equal_vectors_false)
+TEST(Vector, non_equal_vectors_false)
 {
   TVector <int> A(3), B(3);
   for (int i = 0; i < A.GetSize(); i++) {
@@ -77,7 +77,7 @@ TEST(Vector, non-equal_vectors_false)
   ASSERT_FALSE(A != B);
 }
 
-TEST(Vector, non-equal_vectors_true)
+TEST(Vector, non_equal_vectors_true)
 {
   TVector <int> A(3), B(3);
   for (int i = 0; i < A.GetSize(); i++) {
@@ -87,7 +87,7 @@ TEST(Vector, non-equal_vectors_true)
   ASSERT_TRUE(A != B);
 }
 
-TEST(Vector, non-equal_vectors_with_different_sizes)
+TEST(Vector, non_equal_vectors_with_different_sizes)
 {
   TVector <int> A(3), B(4);
   ASSERT_TRUE(A != B);
