@@ -10,7 +10,7 @@ TEST(Vector, copy_vector)
 {
   TVector <int> A(2);
   A[0] = 9;
-  TVector <int> B(V);
+  TVector <int> B(A);
 
   ASSERT_TRUE(B == A);
 }

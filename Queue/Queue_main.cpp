@@ -5,33 +5,28 @@ using namespace std;
 int main()
 {
 	int n = 1;
-	TQueue<int> = new TQueue();
+	cout << "size: ";
+	int s;
+	cin >> s;
+	TQueue<int> A(s);
 	while (n) 
 	{
-		ñout << "1. Create new Queue\n 2. Put element\n 3. Get element\n 4. Print Queue\n 0. Exit\n";
+		cout << "1. Put element\n 2. Get element\n 3. Print Queue\n 0. Exit\n";
 		cin >> n;
 		switch (n)
 		{
 			case 1:
-				cout << "size: ";
-				int s;
-				cin >> s;
-				~A;
-				A = new TQueue(s);
-				break;
-
-			case 2:
 				int e;
 				cout << "Element: ";
 				cin >> e;
 				A.Enqueue(e);
 				break;
 
-			case 3:
+			case 2:
 				cout << A.Dequeue();
 				break;
 
-			case 4:
+			case 3:
 				A.Print();
 				break;
 
