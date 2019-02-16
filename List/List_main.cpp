@@ -6,7 +6,7 @@ int main()
 {
 	int n = 1;
 	int e;
-	TList<int> A();
+	TList<int> A;
 	while (n) 
 	{
 		cout << "1. Put element\n 2. Get element\n 3. Print List\n 0. Exit\n";
