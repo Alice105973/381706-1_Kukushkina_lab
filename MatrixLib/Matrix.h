@@ -125,21 +125,21 @@ TMatrix<T> TMatrix<T>::operator/(const TMatrix<T> &A)
 
 
 template <class TValType>
-istream& operator>>(istream &in, TMatrix<TValType> &A)
+istream& operator>>(istream &is, TMatrix<TValType> &A)
 {
   for (int i = 0; i < A.size; i++)
-    in >> A.vec[i];
-  return in;
+    is >> A.vec[i];
+  return is;
 }
 
 template <class TValType>
-ostream & operator<<(ostream &out, const TMatrix<TValType> &A)
+ostream & operator<<(ostream &os, const TMatrix<TValType> &A)
 {
   for (int i = 0; i < A.size; i++)
   {
     for (int k = 0; k < i; k++)
-      out << "  ";
-    out << A.vec[i] << endl;
+      os << "  ";
+    os << A.vec[i] << endl;
   }
   return out;
 }
