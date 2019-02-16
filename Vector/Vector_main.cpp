@@ -13,10 +13,10 @@ int main()
 	{
 		cout << "1. Put element\n 2. Get element\n 3. Arithmetic operations\n 4. Print Vector\n 0. Exit\n";
 		cin >> n;
+		int e, p;
 		switch (n)
 		{
 			case 1:
-				int e, p;
 				cout << "Element: ";
 				cin >> e;
 				cout << "Position: ";
@@ -25,7 +25,6 @@ int main()
 				break;
 
 			case 2:
-				int p;
 				cout << "Position: ";
 				cin >> p;
 				cout << "Element: " << A[p] << endl;
@@ -36,19 +35,16 @@ int main()
 				cin >> n;
 				switch (n) {
 				case 1:
-					int p;
 					cout << "Addend number: ";
 					cin >> p;
 					A = A + p;
 					break;
 				case 2:
-					int p;
 					cout << "Subtrahend number: ";
 					cin >> p;
 					A = A - p;
 					break;
 				case 3:
-					int p;
 					cout << "Multiplier number: ";
 					cin >> p;
 					A = A*p;
