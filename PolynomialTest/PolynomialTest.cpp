@@ -411,7 +411,7 @@ TEST(TPolynom, sub_eq_polynoms)
   ASSERT_TRUE(a == NULL);
 }
 
-TEST(TPolynom, sub_different_polynoms)
+TEST(TPolynom, sub_different_polynoms_1)
 {
   TPolynom P(3);
   ASSERT_ANY_THROW(P -= C);
