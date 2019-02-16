@@ -141,5 +141,5 @@ ostream & operator<<(ostream &os, const TMatrix<TValType> &A)
       os << "  ";
     os << A.vec[i] << endl;
   }
-  return out;
+  return os;
 }
