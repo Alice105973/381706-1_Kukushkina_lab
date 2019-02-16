@@ -56,7 +56,7 @@ TEST(Matrix, compare_matrix_with_diff_size)
   ASSERT_FALSE(A == B);
 }
 
-TEST(Matrix, non-equal_matrix_true)
+TEST(Matrix, non_equal_matrix_true)
 {
   TMatrix <int> A(3), B(3);
   for (int i = 0; i < A.GetSize(); i++)
@@ -68,7 +68,7 @@ TEST(Matrix, non-equal_matrix_true)
   ASSERT_TRUE(A != B);
 }
 
-TEST(Matrix, non-equal_matrix_false)
+TEST(Matrix, non_equal_matrix_false)
 {
   TMatrix <int> A(3), B(3);
   for (int i = 0; i < A.GetSize(); i++)
@@ -80,7 +80,7 @@ TEST(Matrix, non-equal_matrix_false)
   ASSERT_FALSE(A != B);
 }
 
-TEST(Matrix, non-equal_matrix_with_diff_size)
+TEST(Matrix, non_equal_matrix_with_diff_size)
 {
   TMatrix <int> A(2), B(3);
   ASSERT_TRUE(A != B);
