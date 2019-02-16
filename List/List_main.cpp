@@ -5,10 +5,8 @@ using namespace std;
 int main()
 {
 	int n = 1;
-	cout << "size: ";
-	int s, e;
-	cin >> s;
-	TList<int> A(s);
+	int e;
+	TList<int> A();
 	while (n) 
 	{
 		cout << "1. Put element\n 2. Get element\n 3. Print List\n 0. Exit\n";
