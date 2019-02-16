@@ -17,8 +17,9 @@ public:
   TMatrix operator-(const TMatrix &A);
   TMatrix<T> operator*(const TMatrix<T> &A);
   TMatrix<T> operator/(const TMatrix<T> &A);
-
+template class <TValType>
   friend istream& operator>>(istream &is, TMatrix<T> &A);
+template class <TValType>
   friend ostream& operator<<(ostream &os, const TMatrix<T> &A);
 };
 
@@ -123,7 +124,7 @@ TMatrix<T> TMatrix<T>::operator/(const TMatrix<T> &A)
 }
 
 
-template <class T>
+template class <TValType>
 istream& operator>>(istream &in, TMatrix<T> &A)
 {
   for (int i = 0; i < A.size; i++)
@@ -131,7 +132,7 @@ istream& operator>>(istream &in, TMatrix<T> &A)
   return in;
 }
 
-template <class T>
+template class <TValType>
 ostream & operator<<(ostream &out, const TMatrix<T> &A)
 {
   for (int i = 0; i < A.size; i++)
