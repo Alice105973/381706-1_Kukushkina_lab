@@ -23,7 +23,7 @@ public:
 };
 
 template <class T>
-TMatrix<T>::TMatrix(int s) :TVector<TVector<T>>(s)
+TMatrix<T>::TMatrix(int s) :TVector<TVector<T> >(s)
 {
   if (s <= 0 || s > 1000)
     throw Exc("Invalid size");
@@ -32,11 +32,11 @@ TMatrix<T>::TMatrix(int s) :TVector<TVector<T>>(s)
 }
 
 template <class T>
-TMatrix<T>::TMatrix(const TMatrix<T> &A) :TVector<TVector<T>>(A)
+TMatrix<T>::TMatrix(const TMatrix<T> &A) :TVector<TVector<T> >(A)
 {}
 
 template <class T>
-TMatrix<T>::TMatrix(const TVector<TVector<T>> &A) : TVector<TVector<T>>(A)
+TMatrix<T>::TMatrix(const TVector<TVector<T>> &A) : TVector<TVector<T> >(A)
 {}
 
 template <class T>
@@ -90,7 +90,7 @@ TMatrix<T> TMatrix<T>::operator*(const TMatrix<T> &A)
     for (int j = i; j < this->size; j++)
     {
       for (int k = i; k <= j; k++)
-        rez.vec[i][j - i] += this->vec[i][k - i] * T.vec[k][j - k];
+        rez.vec[i][j - i] += this->vec[i][k - i] * A.vec[k][j - k];
     }
   return rez;
 }
@@ -98,7 +98,7 @@ TMatrix<T> TMatrix<T>::operator*(const TMatrix<T> &A)
 template <class T>
 TMatrix<T> TMatrix<T>::operator/(const TMatrix<T> &A)
 {
-  if (this->size != T.size)
+  if (this->size != A.size)
     throw Exc("error size operand");
   TMatrix <T> copy(*this);
   TMatrix <T> rez(this->size);
