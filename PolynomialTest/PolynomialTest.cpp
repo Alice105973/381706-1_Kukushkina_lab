@@ -386,7 +386,7 @@ TEST(TPolynom, sum_eq_polynoms)
   ASSERT_TRUE(a == NULL);
 }
 
-TEST(TPolynom, sum_different_polynoms)
+TEST(TPolynom, sum_different_polynoms_1)
 {
   TPolynom P(3);
   ASSERT_ANY_THROW(P += C);
