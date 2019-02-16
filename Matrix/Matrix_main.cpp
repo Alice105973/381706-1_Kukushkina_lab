@@ -8,6 +8,7 @@ int main()
 	cout << "size: ";
 	int s;
 	cin >> s;
+	int e, i, j;
 	TMatrix<int> A(s);
 	while (n) 
 	{
@@ -16,7 +17,6 @@ int main()
 		switch (n)
 		{
 			case 1:
-				int e, i, j;
 				cout << "Element: ";
 				cin >> e;
 				cout << "Position: ";
@@ -25,7 +25,6 @@ int main()
 				break;
 
 			case 2:
-				int i, j;
 				cout << "Position: ";
 				cin >> i >> j;
 				cout << "Element: " << A[i][j] << endl;
